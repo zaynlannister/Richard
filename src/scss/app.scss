@@ -188,6 +188,10 @@ button {
   line-height: 26px;
 }
 
+.modes {
+  padding-bottom: 65px;
+}
+
 .modes .container {
   display: flex;
   justify-content: space-between;
@@ -243,4 +247,20 @@ button {
 
 .footer__actions-input input, .footer__actions-button button {
   padding: 10px 20px;
+}
+
+.links {
+  background-color: #1B1B1B;
+  padding: 40px 0 60px;
+}
+
+.links-content {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.links-content a {
+  color: #6B6B6B;
 }
