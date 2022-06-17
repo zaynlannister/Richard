@@ -37,10 +37,12 @@ a {
   color: #ffff;
 }
 
-button {
+button, input {
   border: none;
   outline: none;
-  background-color: #FC0A7E;
+}
+
+button {
   color: #fff;
   cursor: pointer;
 }
@@ -97,6 +99,10 @@ button {
   display: flex;
   justify-content: space-between;
   width: 350px;
+}
+
+.primary-button {
+  background-color: #FC0A7E;
 }
 
 .header-nav-content a, .primary-button {
@@ -209,4 +215,32 @@ button {
 .modes-section__text {
   color: #6B6B6B;
   line-height: 22px;
+}
+
+.footer {
+  background-color: #1B1B1B;
+  padding: 80px 0 60px;
+}
+
+.footer-header, .footer-title {
+  text-align: center;
+}
+
+.footer-header {
+  color: #ffff;
+  font-size: 38px;
+}
+
+.footer-title {
+  color: #6B6B6B;
+  margin: 30px 0;
+}
+
+.footer__actions {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__actions-input input, .footer__actions-button button {
+  padding: 10px 20px;
 }
