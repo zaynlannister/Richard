@@ -1,6 +1,5 @@
 import '../scss/app.scss';
+// import './demo.js';
 
-/* Your JS Code goes here */
 
-/* Demo JS */
-import './demo.js';
+console.log('привет')

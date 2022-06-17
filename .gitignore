@@ -12,6 +12,8 @@
 *.swp
 tags
 nbproject/*
+images
+videos
 
 # Windows
 Thumbs.db
