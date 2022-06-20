@@ -1,0 +1,33 @@
+.menu {
+  padding: 65px 0;
+
+  &-reverse &-content-text__section {
+    order: 2
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+
+    &-text__section {
+      width: 400px;
+
+      &-title {
+        text-transform: uppercase;
+        color: #A8A8A8;
+      }
+
+      &-header {
+        font-size: 35px;
+        margin: 20px 0;
+      }
+
+      &-info {
+        color: #6B6B6B;
+        line-height: 26px;
+      }
+    }
+  }
+}

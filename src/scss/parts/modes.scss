@@ -1,0 +1,32 @@
+.modes {
+  padding-bottom: 65px;
+
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-section {
+    width: 330px;
+    text-align: center;
+
+    &__image img {
+      width: 58px;
+      height: 38px;
+      margin: 0 auto;
+      object-fit: contain;
+    }
+
+    &__header {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    &__text {
+      color: #6B6B6B;
+      line-height: 22px;
+    }
+  }
+}
