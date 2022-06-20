@@ -12,7 +12,6 @@
 *.swp
 tags
 nbproject/*
-images
 videos
 
 # Windows
