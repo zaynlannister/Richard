@@ -1,0 +1,29 @@
+@media (max-width: 1135px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 1125px) {
+  .container {
+    width: 95%;
+  }
+
+  .links-content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1268px) {
+  .header__content::after {
+    z-index: -1;
+    right: 8px;
+    width: 595px;
+  }
+}
+
+@media (max-width: 840px) {
+  .header__content::after {
+    display: none;
+  }
+}
