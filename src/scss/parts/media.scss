@@ -27,3 +27,44 @@
     display: none;
   }
 }
+
+@media (max-width: 768px) {
+  .menu-content {
+    display: block;
+    border-top: 1px solid #6B6B6B;
+
+    &-text__section {
+      width: 100%;
+    }
+
+    &-image__section {
+      display: none;
+    }
+  }
+
+  .modes .container {
+    display: block;
+  }
+
+  .modes-section {
+    width: 100%;
+    text-align: unset;
+    border: 1px solid #6B6B6B;
+    margin-bottom: 20px;
+    padding: 20px 10px;
+    border-radius: 4px;
+
+    &__image img {
+      margin: unset;
+    }
+  }
+
+  .links-content {
+    flex-direction: column;
+    text-align: center;
+
+    & a {
+      margin-bottom: 10px;
+    }
+  }
+}
