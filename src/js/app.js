@@ -1,19 +1,33 @@
 import '../scss/app.scss';
 
-let domElements = {
-    subButton: document.querySelector('.footer__actions-button button'),
-    container: document.querySelector('.footer__actions')
+const subscribeInput = document.querySelector('.footer__actions-input input');
+const subscribeButton = document.querySelector('.footer__actions-button button');
+
+subscribeButton.addEventListener('click', handleSubscribe)
+
+function handleSubscribe() {
+    let email = subscribeInput.value;
+
+    if (emailIsValid(email)) {
+        subscribeUser(email)
+    } else {
+        alert('Enter valid email address!')
+    }
 }
 
-if (localStorage.getItem('follower')) {
-    changeContent(domElements.container, `<div class="footer__actions-sub-text">Спасибо за подписку!</div>`);
+function subscribeUser(email) {
+    localStorage.setItem('subscribe_email', email);
+    document.body.classList.add('subscribed');
 }
 
-domElements.subButton.addEventListener('click', () => {
-    changeContent(domElements.container, `<div class="footer__actions-sub-text">Спасибо за подписку!</div>`);
-    localStorage.setItem('follower', 'true')
-})
+function emailIsValid(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+}
 
-function changeContent(element, data) {
-    element.innerHTML = data;
+window.addEventListener('DOMContentLoaded', DOMReady);
+
+function DOMReady() {
+    if (localStorage.getItem('subscribe_email')) {
+        document.body.classList.add('subscribed');
+    }
 }

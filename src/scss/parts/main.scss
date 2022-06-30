@@ -5,6 +5,18 @@ body {
   color: #000;
 }
 
+body.subscribed {
+  .footer__actions {
+    display: none;
+  }
+
+  .footer-subscriber__text {
+    display: block;
+    color: #02ac02;
+    text-align: center;
+  }
+}
+
 a {
   text-decoration: none;
   color: #ffff;
