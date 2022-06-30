@@ -1,0 +1,35 @@
+
+
+.mobile__menu {
+  z-index: 2;
+  visibility: hidden;
+  position: absolute;
+  background-color: #ffff;
+  height: 100vh;
+  width: 70%;
+
+  &.active {
+    visibility: visible;
+  }
+
+  & a {
+    display: block;
+    color: #0073ff;
+    font-size: 19px;
+    border-bottom: 1px solid  #cdcdcd;
+    padding: 20px 10px;
+  }
+
+  &-button {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+
+    & img {
+      width: 45px;
+      height: 38px;
+      object-fit: contain;
+    }
+  }
+}

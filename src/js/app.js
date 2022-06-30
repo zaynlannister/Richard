@@ -31,3 +31,12 @@ function DOMReady() {
         document.body.classList.add('subscribed');
     }
 }
+
+const mobileNavigationMenu = document.querySelector('.mobile__menu');
+const mobileNavigationButton = document.querySelector('.mobile__menu-button');
+
+mobileNavigationButton.addEventListener('click', toggleMobileMenu);
+
+function toggleMobileMenu() {
+    mobileNavigationMenu.classList.toggle('active')
+}
